@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MediaPlayerMemoryLeaks</string>
+    <string name="main_second_fragment">Dog</string>
+    <string name="main_first_fragment">Cat</string>
+    <string name="main_third_fragment">Horse</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
