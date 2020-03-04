@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainActivity">
+    <fragment
+        android:id="@+id/mainActivity"
+        android:name="com.foothill.navigationsample.HomeFragment"
+        android:label="activity_main"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/fragment_homepage">
+        <action
+            android:id="@+id/action_mainActivity2_to_horseFragment"
+            app:destination="@id/horseFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainActivity_to_catFragment"
+            app:destination="@id/catFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainActivity_to_dogFragment"
+            app:destination="@id/dogFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/catFragment"
+        android:name="com.foothill.navigationsample.CatFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_cat" />
+    <fragment
+        android:id="@+id/dogFragment"
+        android:name="com.foothill.navigationsample.DogFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_dog" />
+    <fragment
+        android:id="@+id/horseFragment"
+        android:name="com.foothill.navigationsample.HorseFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_horse" />
+</navigation>
