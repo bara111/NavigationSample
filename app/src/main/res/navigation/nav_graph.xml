@@ -8,24 +8,24 @@
     <fragment
         android:id="@+id/cat"
         android:name="com.foothill.navigationsample.cat.CatFragment"
-        android:label="fragment_home"
+        android:label="fragment_cat"
         tools:layout="@layout/fragment_cat" >
         <action
-            android:id="@+id/action_home2_to_explore"
+            android:id="@+id/action_to_dog"
             app:destination="@id/dog" />
     </fragment>
     <fragment
         android:id="@+id/dog"
         android:name="com.foothill.navigationsample.dog.DogFragment"
-        android:label="fragment_explore"
+        android:label="fragment_dog"
         tools:layout="@layout/fragment_dog" >
         <action
-            android:id="@+id/action_explore_to_more"
+            android:id="@+id/action_to_horse"
             app:destination="@id/horse" />
     </fragment>
     <fragment
         android:id="@+id/horse"
         android:name="com.foothill.navigationsample.horse.HorseFragment"
-        android:label="fragment_more"
+        android:label="fragment_horse"
         tools:layout="@layout/fragment_horse" />
 </navigation>
