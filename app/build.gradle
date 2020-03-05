@@ -57,7 +57,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     api "org.jetbrains.anko:anko-commons:0.10.1"
     kapt "androidx.lifecycle:lifecycle-compiler:2.2.0"
-
 }
 kapt {
     generateStubs = true
