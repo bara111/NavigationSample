@@ -1,16 +1,16 @@
-package com.foothill.navigationsample
+package com.foothill.navigationsample.horse
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.foothill.navigationsample.R
 
-
-class CatFragment : Fragment() {
+class HorseFoodFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_cat, container, false)
+        return inflater.inflate(R.layout.fragment_horse_food, container, false)
     }
 }
